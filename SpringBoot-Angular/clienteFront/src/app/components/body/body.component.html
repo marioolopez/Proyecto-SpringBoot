@@ -1,0 +1,19 @@
+<br>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of arrCategorias">
+        <th scope="row"> {{i.id}} </th>
+        <td> {{i.nombre}} </td>
+        <td> {{i.descripcion}} </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
