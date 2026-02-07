@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <title>Aplicación con Spring Boot y MongoDB</title>
+  
+  <!--importar boostrap-->
+  <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"> 
+  
+</head>
+<body>
+	
+	<div class="container">
+		<br>
+		<h2 th:if="${list.isEmpty()}"> no hay lista de empleados</h2>	
+		
+		<div th:if="!${list.isEmpty()}">
+			<h2>mantenimiento de empleados</h2>
+			
+			<table class="table">
+			  <thead>
+			    <tr>
+				  <th>Dni</th>
+			      <th>Nombre</th>
+			      <th>Apellido</th>
+			      <th>Edad</th>
+			      <th>Dirección</th>
+				  <th>Teléfono</th>
+				  <th>Editar</th> <!--Botones-->
+				  <th>Eliminar</th> <!--Botones-->
+			    </tr>
+			  </thead>
+			  <tbody>
+				
+			    <tr th:each="empleado: ${list}">
+				  <td th:text="${empleado.id}">
+			      <td th:text="${empleado.nombre}">
+			      <td th:text="${empleado.apellido}">
+			      <td th:text="${empleado.edad}">
+				  <td th:text="${empleado.direccion}">
+				  <td th:text="${empleado.telefono}">
+					
+				  <td> <a class="btn btn-primary" th:href="@{/guardar/{id}(id=${empleado.id})}">Editar</a></td>
+				  <td> <a class="btn btn-danger" th:href="@{/eliminar/{id}(id=${empleado.id})}">Eliminar</a></td>				
+			    </tr>
+			    
+			  </tbody>
+			</table>
+		</div>
+		<br>
+		
+		<div>
+			<a href="/guardar/0" class="btn btn-primary">Agregar</a>
+		</div>
+		
+	</div>
+</body>
+</html>

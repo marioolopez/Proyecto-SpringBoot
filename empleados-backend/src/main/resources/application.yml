@@ -1,0 +1,4 @@
+spring:
+  mongodb:
+    database: empleado_db
+    uri: mongodb+srv://empleado_admin:OianG93aRgBaEbMJ@cluster0.muyto7d.mongodb.net/

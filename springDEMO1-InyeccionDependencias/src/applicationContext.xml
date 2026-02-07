@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<!--Definir las dependencias-->
+   	<bean id="afinacion" class="com.udemy.ejercicio1.AfinacionService">
+   	</bean>
+   
+    <!--Archivo de configuración externo (definir beans de la aplicacion)-->
+    <!--<bean id="miInstrumento" class="com.udemy.ejercicio1.Piano">
+    <constructor-arg ref="afinacion"></constructor-arg>
+    </bean>-->
+    
+    
+    
+	<!--INYECCION DE DEPENDECIA POR CONSTUCTOR-->
+    <bean id="miInstrumento" class="com.udemy.ejercicio1.Guitarra">
+    <constructor-arg ref="afinacion"></constructor-arg>
+    </bean>
+    
+    
+    <!--INYECCION DE DEPENDENCIA POR METODO SETTERS-->
+    <bean id="miViolin" class="com.udemy.ejercicio1.Violin">
+    <property name="afinar" ref="afinacion"></property>
+    </bean>
+    
+    
+</beans>

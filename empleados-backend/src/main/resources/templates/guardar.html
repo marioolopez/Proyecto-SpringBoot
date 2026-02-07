@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  
+  <!--importar boostrap-->
+    <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"> 
+  
+</head>
+<body>
+	
+	<div class="container">
+		<br>
+		<h2>Agregar Empleado</h2>
+		
+		<form action="#" th:action="@{/guardar}" th:object="${empleado}" method="post">
+			
+			<!--Introducir el dni-->
+			<div class="mb-3">
+				<label for="id" class="form-label">Dni</label>
+				<input type="text" class="form-control" id="id" placeholder="Ingresar Dni:" th:field="*{id}" name="id">
+			</div>
+			
+			<!--Introducir el nombre-->
+			<div class="mb-3">
+			  <label for="nombre" class="form-label">Nombre</label>
+			  <input type="text" class="form-control" id="nombre" placeholder="Ingresar Nombre:" th:field="*{nombre}" name="nombre">
+			</div>
+					
+			<!--Introducir el apellido-->
+			<div class="mb-3">
+				<label for="apellido" class="form-label">Apellido</label>
+				<input type="text" class="form-control" id="apellido" placeholder="Ingresar Apellido:" th:field="*{apellido}" name="apellido">
+			</div>
+			
+			<!--Introducir la edad-->
+			<div class="mb-3">
+				<label for="edad" class="form-label">Edad</label>
+				<input type="text" class="form-control" id="edad" placeholder="Ingresar Edad:" th:field="*{edad}" name="edad">
+			</div>
+						
+			<!--Introducir la direccion-->		
+			<div class="mb-3">
+				<label for="direccion" class="form-label">Direccion</label>
+				<input type="text" class="form-control" id="direccion" placeholder="Ingresar Direccion:" th:field="*{direccion}" name="direccion">
+			</div>
+			
+			<!--Introducir el telefono-->
+			<div class="mb-3">
+				<label for="telefono" class="form-label">Telefono</label>
+				<input type="text" class="form-control" id="telefono" placeholder="Ingresar Telefono:" th:field="*{telefono}" name="telefono">
+			</div>
+			
+			<button type="submit" class="btn btn-dark">Guardar</button>
+			
+		</form>
+		
+	</div>
+
+</body>
+</html>
