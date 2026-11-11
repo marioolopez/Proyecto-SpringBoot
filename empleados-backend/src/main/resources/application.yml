@@ -1,4 +1,4 @@
 spring:
   mongodb:
     database: empleado_db
-    uri: ${MONGODB_URI}
+    uri: ${MONGODB_URI} #crear un usuario para ello (security: remove exposed MongoDB credentials.)
