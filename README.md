@@ -1,30 +1,40 @@
-CERTIFICACIÓN: DESARROLLO DE APLICACIONES BACKEND
+# Desarrollo de Aplicaciones Backend con Spring Boot 3
 
-TODAS ESTAS CARPETAS REPRESENTAN PROYECTOS QUE SE HA IDO TRABAJANDO A LO LARGO DE LA CERTIFICACIÓN.
+## Descripción
 
-He terminado aprendiendo muchisimas cosas sobre este framework.
+Este es un repositorio que reúne diferentes proyectos y ejercicios prácticos desarrollados durante el curso de **Desarrollo de Aplicaciones Backend con Spring Boot**, impartido a través de Udemy.
 
-Aprendí a desarrollar aplicaciones backend con Spring Boot 3
-Aprendí a construir APIS Rest con tecnología Spring Boot
-Aprendí conceptos esenciales sobre Spring framework, tales cómo Spring Container, JPA, Spring MVC, inyección de dependencias.
-Aprendí a securizar una aplicación web con Spring Security y JWT.
-Aprendí a documentar APIS con Swagger y Springdocs.
-Con Angular aprendí a consumir servicios Rest construidos con Spring Boot 3.
-Aprendí a realizar pruebas unitarias con JUnit y Mockito.
-Aprendí la metodología de desarrollo TDD (desarrollos basados en pruebas).
-Aprendí a trabajar con MySql cómo motor de base de datos.
-Aprendí los conceptos principales de Java. Se trabajará con la versión 17 de Java.
-Aprendí a cómo instalar todos lo software necesarios para trabajar con Spring Boot.
-Aprendí con base de datos MongoDB en la nube.
-Aprendí a conectar aplicaciones Spring Boot con MongoDB.
-Aprendí Thymeleaf cómo motor de plantillas para aplicaciones Spring Web.
-Aprendí a usar la librería Lombok en Spring Boot.
-Uso de archivos de configuración yml.
-Aprendí a versionar el código fuente con Git y GitHub.
-Aprendí a crear un cliente Angular para consumir uno de los proyectos creados con Spring Boot en este curos
-Aprendí a desplegar aplicaciones Spring Boot en la nube con Amazon Web Services (AWS) con los servicios Elastic Beanstalk.
-Aprendí a desplegar aplicaciones angular en la nube con AWS utilizando el servicio cloudfront y S3.
-Aprendí a utilizar contenedores docker para trabajar con servicios spring boot.
+El objetivo de esta formación ha sido profundizar en el desarrollo de aplicaciones backend utilizando Java 17 y Spring Boot 3, abordando desde los fundamentos del framework hasta la implementación de APIs REST, seguridad, persistencia de datos, pruebas automatizadas y despliegue de aplicaciones.
 
+## Tecnologías y conocimientos adquiridos
 
-Un curso completo y con el que salí con muchos conocimientos de los cuáles desconocia
+| Área | Tecnologías y conceptos |
+|---|---|
+| Lenguaje y framework | Java 17, Spring Boot 3, Spring Framework, Spring MVC |
+| Arquitectura | APIs REST, inyección de dependencias, Spring Container |
+| Persistencia | Spring Data JPA, MySQL, MongoDB |
+| Seguridad | Spring Security, JWT, BCrypt |
+| Testing | JUnit 5, Mockito, TDD |
+| Documentación | Swagger, Springdoc/OpenAPI |
+| Frontend | Angular, consumo de APIs REST |
+| Herramientas | Lombok, Git, GitHub, YAML |
+| Contenedores | Docker |
+| Despliegue | AWS Elastic Beanstalk, S3, CloudFront |
+| Vistas web | Thymeleaf |
+
+## Contenido del repositorio
+
+El repositorio contiene diferentes aplicaciones y ejercicios prácticos desarrollados a lo largo de la formación, donde se trabajan aspectos fundamentales del desarrollo backend.
+
+Entre los principales conceptos abordados destacan la construcción de servicios REST, la gestión de datos mediante bases de datos relacionales y NoSQL, la autenticación y autorización de usuarios, las pruebas automatizadas y la integración de aplicaciones frontend con servicios backend.
+
+También se han trabajado herramientas de contenedorización y servicios de AWS para comprender diferentes alternativas de despliegue de aplicaciones.
+
+## Aprendizajes
+
+En general, toda esta formación me ha permitido ampliar mis conocimientos de Java y del ecosistema Spring, así como comprender mejor la arquitectura y el funcionamiento de las aplicaciones backend.
+
+A través de los diferentes ejercicios he profundizado en la organización del código, la integración de bases de datos, la seguridad de aplicaciones y la importancia de las pruebas automatizadas durante el desarrollo.
+
+Este repositorio refleja parte de mi proceso de aprendizaje y mi interés por seguir desarrollando mis competencias técnicas como desarrollador de software.
+
